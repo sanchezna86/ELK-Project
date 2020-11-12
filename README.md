@@ -63,9 +63,10 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - _TODO: What is the main advantage of automating configuration with Ansible?_
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Create VM in Azure and make sure to write down the Public and Private IP addresses. Great inbound rules to be able to connect via ssh to the server using     ssh.Install Docker; download image; etc.
+- Using Terminal ssh into your jump box via ssh. Download docker container. Once you download the docker container you need to edit (nano) your host.conf file. Here you need to add the ELk server to the webserver section and add the IP address. Create and install playbook to configure the Elk server and configure your ports.
+- Now lauch the container and ssh to the elk server from the container. use sudo docker ps command in the elk server to verify the container is working.
+
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
